@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { initializeApp, getApps } from "firebase/app";
 import { getDatabase, ref, push } from "firebase/database";
 
@@ -109,10 +109,7 @@ const Login = () => {
           </button>
         </div>
         <nav className="flex-1 px-3 space-y-1">
-          <a
-            href="#"
-            className="flex items-center gap-3 px-4 py-2 bg-blue-50 text-[#1a73e8] rounded-r-full font-medium text-sm"
-          >
+          <span className="flex items-center gap-3 px-4 py-2 bg-blue-50 text-[#1a73e8] rounded-r-full font-medium text-sm">
             <svg
               className="w-5 h-5"
               fill="none"
@@ -127,7 +124,7 @@ const Login = () => {
               />
             </svg>
             Upcoming Events
-          </a>
+          </span>
         </nav>
         <div className="p-4 border-t border-slate-100">
           <h3 className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3">
